@@ -39,7 +39,7 @@ export function Sidebar({ currentView }: { currentView: View }) {
         <div class="sidebar-brand-icon">
           <CalendarClock size={16} />
         </div>
-        <span class="sidebar-brand-name">OpenFieldService</span>
+        <span class="sidebar-brand-name">SmartField</span>
         <button class="btn-icon" aria-label={collapsed ? "Expand navigation" : "Collapse navigation"} onClick={() => setCollapsed(!collapsed)}><PanelLeft size={16} /></button>
       </div>
       <nav class="sidebar-nav">

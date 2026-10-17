@@ -1,9 +1,11 @@
 <picture>
   <source media="(prefers-color-scheme: dark)" srcset="readme-banner-dark.png" />
-  <img src="readme-banner.png" alt="OpenFieldService — weekly dispatch with a floating conceptual technician assignment panel" width="100%" />
+  <img src="readme-banner.png" alt="SmartField — weekly dispatch with a floating conceptual technician assignment panel" width="100%" />
 </picture>
 
-# OpenFieldService: The Open-Source PestPac & ServiceTitan Alternative
+# SmartField: The Open-Source PestPac & ServiceTitan Alternative
+
+*SmartField is a rebrand of [OpenFieldService](https://github.com/clawnify/OpenFieldService) (MIT, © Clawnify) — customized for Smart Home Repair LLC.*
 
 [![Deploy with Clawnify](https://app.clawnify.com/deploy-button.svg)](https://app.clawnify.com/deploy?repo=clawnify/OpenFieldService)
 
@@ -23,13 +25,13 @@ Conceptual UI illustrations of the app’s main capabilities, with fictional exa
 
 ## What Is It?
 
-OpenFieldService is a production-ready field service management platform designed for the OpenClaw community. Think of it as an open-source alternative to **PestPac**, **ServiceTitan**, **FieldWork**, **Jobber**, or **Housecall Pro** — a complete scheduling and dispatch system you can self-host, customize, and embed in any SaaS product.
+SmartField is a production-ready field service management platform, forked from [OpenFieldService](https://github.com/clawnify/OpenFieldService) and part of the OpenClaw community. Think of it as an open-source alternative to **PestPac**, **ServiceTitan**, **FieldWork**, **Jobber**, or **Housecall Pro** — a complete scheduling and dispatch system you can self-host, customize, and embed in any SaaS product.
 
 Unlike PestPac or ServiceTitan, this runs entirely on your own infrastructure. No per-user fees, no contracts, no vendor lock-in. Manage your entire field service operation from scheduling to invoicing.
 
 ## Built for Every Field Service Vertical
 
-OpenFieldService is **vertical-agnostic** — configure service types, pricing, and workflows for any industry:
+SmartField is **vertical-agnostic** — configure service types, pricing, and workflows for any industry:
 
 | Industry | Example Services |
 |----------|-----------------|
@@ -58,7 +60,6 @@ OpenFieldService is **vertical-agnostic** — configure service types, pricing, 
 - **Materials tracking** — log materials used on each job with costs, maintain inventory
 - **Job checklists** — inspection forms and task lists per job with check/uncheck
 - **Activity log** — timestamped notes on every job for internal communication
-- **Customer context on every job** — lifetime job count, last completed service, and paid invoice revenue without leaving the work order
 - **Dashboard** — at-a-glance KPIs: today's schedule, upcoming jobs, revenue, outstanding invoices
 - **Search & filter** — find jobs by status, search customers by name/phone/address
 - **URL routing** — bookmarkable pages (`/jobs`, `/customers/:uuid`, `/invoices`, `/schedule`)
@@ -278,7 +279,7 @@ invoice_lines(id, invoice_id, description, quantity, unit_price, total)
 | GET | `/api/schedule` | Jobs within date range (calendar view) |
 | GET | `/api/jobs` | List jobs (paginated, filterable by status) |
 | POST | `/api/jobs` | Create a job |
-| GET | `/api/jobs/:id` | Job detail with notes, checklist, materials, and customer service context |
+| GET | `/api/jobs/:id` | Job detail with notes, checklist, materials |
 | PUT | `/api/jobs/:id` | Update a job |
 | DELETE | `/api/jobs/:id` | Delete a job |
 | POST | `/api/jobs/:id/notes` | Add a job note |

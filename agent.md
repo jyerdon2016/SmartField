@@ -1,4 +1,4 @@
-# OpenFieldService
+# SmartField
 
 A scheduling and dispatch app for field service businesses — pest control, HVAC, plumbing, cleaning, landscaping, and more.
 
